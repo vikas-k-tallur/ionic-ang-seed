@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="app">
+    <div class="center">
+      <ion-title>App Name</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding='true'>
+  <br>
+  <div class="center">
+    <img src="assets/icon/favicon.png" class="smallLogo" />
+    <h1>Create Account</h1>
+  </div>
+  <form>
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input autocomplete="off" type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Username</ion-label>
+        <ion-input autocomplete="off" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input autocomplete="off" type="password"></ion-input>
+      </ion-item>
+
+      <ion-item lines='none'>
+        Already have an account? <a routerLink='/login'>Sign in.</a>
+      </ion-item>
+    </ion-list>
+    <ion-button expand="block" share="round" color="success" (click)="register()">Registration</ion-button>
+  </form>
+</ion-content>

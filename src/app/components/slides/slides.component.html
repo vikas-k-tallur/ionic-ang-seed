@@ -1,0 +1,16 @@
+<ion-slides pager="true" [options]="slideOpts">
+  <ion-slide>
+    <img src="assets/icon/favicon.png" />
+    <h2>Welcome <ion-text color="primary"> {{ authenticatedUser?.name }} </ion-text>to Ionic Seed Project</h2>
+  </ion-slide>
+  <ion-slide>
+    <ion-icon name="thumbs-up-outline"></ion-icon>
+    <h2>Happy Learning</h2>
+  </ion-slide>
+  <ion-slide>
+    <ion-icon name="logo-github"></ion-icon>
+    <a class="ion-home color-primary item" href="#"
+      onclick="window.open('https://github.com/vikas-k-tallur', '_system', 'location=yes'); return false;">
+      Github link</a>
+  </ion-slide>
+</ion-slides>

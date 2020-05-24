@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="app">
+    <div class="center">
+    <ion-title>App Name</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding='true'>
+  <br>
+  <div class="center">
+    <img src="assets/icon/favicon.png" class="smallLogo" />
+    <h1>Sign In</h1>
+  </div>
+
+  <form>
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">Username</ion-label>
+        <ion-input autocomplete="off" type="text" name="username" [(ngModel)]="loginFormData.username"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input autocomplete="off" type="password" name="password" [(ngModel)]="loginFormData.password"></ion-input>
+      </ion-item>
+
+      <ion-item lines='none'>
+        <a routerLink='/register'>Register</a>
+      </ion-item>
+    </ion-list>
+    <ion-button expand="block" share="round" color="success" (click)="login()">Login</ion-button>
+  </form>
+</ion-content>
